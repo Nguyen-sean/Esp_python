@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ESP32 Status</title>
+</head>
+<body>
+    <h1>ESP32 System Status</h1>
+    <form action="/submit" method="post">
+        <label for="ssid">SSID:</label><br>
+        <input type="text" id="ssid" name="ssid" value=""><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" value=""><br><br>
+        <input type="submit" value="Save Wi-Fi Credentials">
+    </form>
+    <hr>
+    <h2>Data Configuration</h2>
+    <p><b>Location:</b> {{LOCATION}}</p>
+    <hr>
+    <h2>Connection Status</h2>
+    <p><b>Wi-Fi Status:</b> {{WIFI_STATUS}}</p>
+    <p><b>ThingSpeak Status:</b> {{THINGSPEAK_STATUS}}</p>
+</body>
+</html>
